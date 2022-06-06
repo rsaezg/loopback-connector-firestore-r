@@ -335,15 +335,23 @@ class Firestore extends Connector {
 	};
 
 	public create = (model: string, data: any, callback: ICallback) => {
-		this.db
-			.collection(model)
-			.add(data)
-			.then((ref: DocumentReference) => {
-				callback(null, ref.id);
-			})
-			.catch((err: Error) => {
-				callback(err);
-			});
+		if(data.ID){
+			let dataDoc = data;
+			delete dataDoc.ID;
+			this.db
+				.doc(data.ID)
+				.set(dataDoc)
+		}else {
+			this.db
+				.collection(model)
+				.add(data)
+				.then((ref: DocumentReference) => {
+					callback(null, ref.id);
+				})
+				.catch((err: Error) => {
+					callback(err);
+				});
+		}
 	};
 
 	public updateAll = (

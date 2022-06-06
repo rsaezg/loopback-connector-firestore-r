@@ -1,56 +1,62 @@
 {
-	"name": "loopback-connector-firestore",
-	"version": "1.0.8",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"description": "Firebase Firestore connector for the LoopBack framework.",
-	"scripts": {
-		"lint": "eslint . --fix --ext .ts,.js",
-		"typecheck": "tsc --project tsconfig.json",
-		"pretest": "npm run build",
-		"test": "mocha --exit",
-		"stage-files": "git add .",
-		"build": "tsc",
-		"prepublishOnly": "npm run build"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/dyaa/loopback-connector-firestore.git"
-	},
-	"dependencies": {
-		"@google-cloud/firestore": "^2.6.1",
-		"loopback-connector": "4.9.0"
-	},
-	"devDependencies": {
-		"@types/node": "^12.12.14",
-		"@typescript-eslint/eslint-plugin": "^2.10.0",
-		"@typescript-eslint/parser": "^2.10.0",
-		"eslint": "^6.7.2",
-		"eslint-config-loopback": "^13.1.0",
-		"eslint-config-prettier": "^6.7.0",
-		"eslint-plugin-prettier": "^3.1.1",
-		"husky": "^3.1.0",
-		"loopback-datasource-juggler": "^4.17.0",
-		"mocha": "~6.2.2",
-		"npm-run-all": "^4.1.5",
-		"prettier": "^1.19.1",
-		"should": "^13.2.3",
-		"typescript": "^3.7.3"
-	},
-	"engines": {
-		"node": ">=10"
-	},
-	"keywords": [
-		"connector",
-		"datasource",
-		"dyaa",
-		"loopback",
-		"strongloop",
-		"firestore",
-		"firebase"
-	],
-	"author": "Dyaa Eldin <mail@dyaa.me> (https://dyaa.me)",
-	"license": "MIT",
-	"bugs": "https://github.com/dyaa/loopback-connector-firestore/issues",
-	"homepage": "https://github.com/dyaa/loopback-connector-firestore"
+  "name": "@rsaezg/loopback-connector-firestore-r",
+  "version": "1.0.8",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "description": "Firebase Firestore connector for the LoopBack framework.",
+  "scripts": {
+    "lint": "eslint . --fix --ext .ts,.js",
+    "typecheck": "tsc --project tsconfig.json",
+    "pretest": "npm run build",
+    "test": "mocha --exit",
+    "stage-files": "git add .",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rsaezg/loopback-connector-firestore-r.git"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^2.6.1",
+    "loopback-connector": "4.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "eslint": "^6.7.2",
+    "eslint-config-loopback": "^13.1.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.1.0",
+    "loopback-datasource-juggler": "^4.17.0",
+    "mocha": "~6.2.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "should": "^13.2.3",
+    "typescript": "^3.7.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "connector",
+    "datasource",
+    "dyaa",
+    "loopback",
+    "strongloop",
+    "firestore",
+    "firebase"
+  ],
+  "author": "Dyaa Eldin <mail@dyaa.me> (https://dyaa.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsaezg/loopback-connector-firestore-r"
+  },
+  "homepage": "https://github.com/rsaezg/loopback-connector-firestore-r",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
