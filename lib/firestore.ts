@@ -335,13 +335,11 @@ class Firestore extends Connector {
 	};
 
 	public create = (model: string, data: any, callback: ICallback) => {
-		if(data.ID){
-			let dataDoc = data;
+		if (data.ID) {
+			const dataDoc = data;
 			delete dataDoc.ID;
-			this.db
-				.doc(data.ID)
-				.set(dataDoc)
-		}else {
+			this.db.doc(data.ID).set(dataDoc);
+		} else {
 			this.db
 				.collection(model)
 				.add(data)
@@ -563,4 +561,4 @@ class Firestore extends Connector {
 	};
 }
 
-export { Firestore, initialize };
+export default { Firestore, initialize };
