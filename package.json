@@ -1,6 +1,6 @@
 {
-  "name": "@rsaezg/loopback-connector-firestore-r",
-  "version": "1.0.8",
+  "name": "loopback-connector-firestore-r",
+  "version": "1.0.9",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "description": "Firebase Firestore connector for the LoopBack framework.",
