@@ -1,3 +1,3 @@
-const SG = require('strong-globalize');
-SG.SetRootDir(__dirname);
+// const SG = require('strong-globalize');
+// SG.SetRootDir(__dirname);
 module.exports = require('./lib/firestorer.js');
