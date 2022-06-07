@@ -1,12 +1,12 @@
 # loopback-connector-firestore
-Firebase Firestore connector for the LoopBack framework.
+Firebase Firestorer connector for the LoopBack framework.
 
 [![wercker status](https://app.wercker.com/status/5e9652f63a609040f049a790e98c667a/s/master "wercker status")](https://app.wercker.com/project/byKey/5e9652f63a609040f049a790e98c667a)
 [![npm](https://img.shields.io/npm/dt/loopback-connector-firestore.svg)](https://www.npmjs.com/package/loopback-connector-firestore)
 [![npm](https://img.shields.io/npm/v/loopback-connector-firestore.svg)](https://www.npmjs.com/package/loopback-connector-firestore)
 [![npm](https://img.shields.io/npm/l/loopback-connector-firestore.svg)](https://github.com/dyaa/loopback-connector-firestore)
 
-I needed an easy way to connect a Loopback application to [Firebase][7]'s NoSQL database [Firestore][6] so that i decided to build this connector.
+I needed an easy way to connect a Loopback application to [Firebase][7]'s NoSQL database [Firestorer][6] so that i decided to build this connector.
 
 ### Installation
 If you want to know how to get started with Loopback [check this][5].
@@ -17,8 +17,8 @@ lb datasource
 ```
 Then the data source generator will prompt some questions like
 
- - Enter the data-source name: **Firestore** *(Choose your prefered name)*
- - Select the connector for Firestore: **other**
+ - Enter the data-source name: **Firestorer** *(Choose your prefered name)*
+ - Select the connector for Firestorer: **other**
  - Enter the connector's module name **loopback-connector-firestore**
  - Install loopback-connector-firestore (Y/n) **y**
 

@@ -14,13 +14,13 @@ const initialize = function initializeDataSource(
 	dataSource: IDataSource,
 	callback: any
 ) {
-	dataSource.connector = new Firestore(dataSource.settings!);
+	dataSource.connector = new Firestorer(dataSource.settings!);
 	process.nextTick(() => {
 		callback();
 	});
 };
 
-class Firestore extends Connector {
+class Firestorer extends Connector {
 	public _models: any;
 	public db: any;
 
@@ -510,7 +510,7 @@ class Firestore extends Connector {
 
 	/**
 	 * Add new filter to a Query
-	 * @param {Query} query Firestore Query
+	 * @param {Query} query Firestorer Query
 	 * @param {Object} filter The filter object
 	 */
 	private addFiltersToQuery = (query: Query, filter: IFilter) => {
@@ -528,7 +528,7 @@ class Firestore extends Connector {
 
 	/**
 	 * Add inner filters to a Query
-	 * @param {Query} query Firestore Query
+	 * @param {Query} query Firestorer Query
 	 * @param {String} key Property name being filtered
 	 * @param {Object} value Object with operator and comparison value
 	 */
@@ -561,4 +561,4 @@ class Firestore extends Connector {
 	};
 }
 
-export default { Firestore, initialize };
+export default { Firestore: Firestorer, initialize };
